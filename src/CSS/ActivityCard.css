@@ -1,0 +1,37 @@
+/* Fondo negro para el componente */
+.activities-container {
+  background-color: #000; /* Fondo negro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25vh; /* Altura completa del viewport */
+  /* padding: 20px; */
+  margin-top: 10px;
+}
+
+/* Estilo para la tarjeta */
+.activities-card {
+  background-color: #fff; /* Fondo blanco para la tarjeta */
+  color: #000; /* Texto en negro */
+  width: 90%; /* Ancho fijo */
+  height: 80%; /* Altura fija */
+  border-radius: 8px; /* Bordes redondeados */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3); /* Sombra para destacar */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación al pasar el cursor */
+}
+
+/* Contenido dentro de la tarjeta */
+.card-content {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Efecto hover para resaltar aún más la tarjeta */
+.activities-card:hover {
+  transform: scale(1.05); /* Agranda ligeramente la tarjeta */
+  box-shadow: 0 6px 15px rgba(255, 255, 255, 0.5); /* Sombra más intensa */
+}

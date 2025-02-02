@@ -1,0 +1,60 @@
+import React, { useState } from "react";
+import "../CSS/Login.css";
+import logo from "../assets/logo.png"
+
+const Login = () => {
+
+
+
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleLogin = () => {
+    console.log("Iniciar sesión con:", username, password);
+    // Aquí puedes simular la llamada al backend
+  };
+
+  const handleStaffLogin = () => {
+    console.log("Login staff");
+  };
+
+  const handleRecoverPassword = () => {
+    console.log("Recuperar contraseña");
+  };
+
+  return (
+    <div className="login-container">
+      <div className="login-logo">
+      <img src={logo} alt="logo" />
+      </div>
+      <input
+        type="text"
+        className="login-input"
+        placeholder="Usuario"
+        value={username}
+        onChange={(e) => setUsername(e.target.value)}
+      />
+      <input
+        type="password"
+        className="login-input"
+        placeholder="Contraseña"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+      />
+      <button className="login-button" onClick={handleLogin}>
+        INICIAR SESIÓN
+      </button>
+      <button className="login-button" onClick={handleStaffLogin}>
+        LOGIN STAFF
+      </button>
+      <div
+        className="login-recover"
+        onClick={handleRecoverPassword}
+      >
+        OBTENER / RECUPERAR CONTRASEÑA
+      </div>
+    </div>
+  );
+};
+
+export default Login;

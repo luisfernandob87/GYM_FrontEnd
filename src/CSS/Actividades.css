@@ -1,0 +1,68 @@
+/* Actividades.css */
+.schedule-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .schedule-header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .date-picker,
+  .search-bar {
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .activity-card {
+    border-left: 5px solid;
+    background: #f9f9f9;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .activity-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .activity-time {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .activity-title {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  .activity-status {
+    text-align: right;
+  }
+  
+  .status-text {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 5px;
+  }
+  
+  .participants {
+    background: #ddd;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+  }
+  
