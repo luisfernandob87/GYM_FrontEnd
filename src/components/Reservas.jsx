@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../CSS/Reservas.css";
+import BottomMenu from "./BottomMenu";
 
 const Reservas = () => {
   // Datos simulados
@@ -49,6 +50,7 @@ const Reservas = () => {
         <button className="btn btn-info">Más info</button>
         <button className="btn btn-reservar">Reservar</button>
       </div>
+      <BottomMenu />
     </div>
   );
 };

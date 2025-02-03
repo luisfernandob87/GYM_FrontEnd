@@ -1,17 +1,20 @@
 import React, { useState } from "react";
 import "../CSS/Login.css";
 import logo from "../assets/logo.png"
+import { useNavigate } from "react-router";
+
 
 const Login = () => {
-
-
 
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
+  const navigate = useNavigate();
+
   const handleLogin = () => {
     console.log("Iniciar sesión con:", username, password);
     // Aquí puedes simular la llamada al backend
+    navigate("/principal");
   };
 
   const handleStaffLogin = () => {

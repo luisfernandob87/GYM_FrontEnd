@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import "../CSS/Actividades.css";
+import BottomMenu from "./BottomMenu";
+import { useNavigate } from "react-router";
+
 
 const Actividades = () => {
   // Datos simulados
@@ -37,6 +40,13 @@ const Actividades = () => {
   const [selectedDate, setSelectedDate] = useState("2025-01-08");
   const [searchQuery, setSearchQuery] = useState("");
 
+    const navigate = useNavigate();
+
+    const handleActivity = () => {
+      navigate("/Reservas");
+    };
+
+
   const filteredActivities = activities.filter((activity) =>
     activity.title.toLowerCase().includes(searchQuery.toLowerCase())
   );
@@ -61,6 +71,7 @@ const Actividades = () => {
 
       {filteredActivities.map((activity, index) => (
         <div
+          onClick={handleActivity}
           key={index}
           className="activity-card"
           style={{ borderLeftColor: activity.color }}
@@ -77,6 +88,7 @@ const Actividades = () => {
           </div>
         </div>
       ))}
+      <BottomMenu />
     </div>
   );
 };

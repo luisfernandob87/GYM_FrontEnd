@@ -4,20 +4,17 @@ import '../CSS/BottomMenu.css';
 const BottomMenu = () => {
     return (
       <div className="bottom-menu">
-        <a href="#today" className="menu-item">
-          <span>Hoy tienes</span>
+        <a href="#/principal" className="menu-item">
+          <span>Inicio</span>
         </a>
         <a href="#my-center" className="menu-item active">
-          <span>Mi centro</span>
+          <span>Mis Reservas</span>
         </a>
         <a href="#profile" className="menu-item">
           <span>Mi perfil</span>
         </a>
-        <a href="#chat" className="menu-item">
-          <span>Mi chat</span>
-        </a>
-        <a href="#more" className="menu-item">
-          <span>Más</span>
+        <a href="/" className="menu-item">
+          <span>Cerrar Sesión</span>
         </a>
       </div>
     );

@@ -9,6 +9,8 @@ import Carrusel from './components/Carrusel'
 import Actividades from './components/Actividades'
 import Reservas from './components/Reservas'
 import Login from './components/Login'
+import Principal from './components/Principal'
+import {HashRouter ,Routes, Route } from "react-router";
 
 const activities = [
   {
@@ -19,24 +21,22 @@ const activities = [
 
 function App() {
   return (
-    <>
-    {/* <Login /> */}
+<HashRouter>
+<Routes>
+<Route path="/" default element={<Login />} />
+<Route path="/principal" element={<Principal />} />
+<Route path="/actividades" element={<Actividades />} />
+<Route path="/reservas" element={<Reservas />} />
+<Route path="/carrusel" element={<Carrusel />} />
+<Route path="/activitycard" element={<ActivityCard />} />
+<Route path="/imageuploader" element={<ImageUploader />} />
+<Route path="/bottommenu" element={<BottomMenu />} />
+</Routes>
+</HashRouter>
 
 
-       <Carrusel />
 
-        <ActivityCard/>
-
-    
-
-    {/* <Actividades />  */}
-
-    {/* <Reservas />  */}
-     {/* <ImageUploader /> */}
-
-     <BottomMenu />
-    </>
-  )
+  );
 }
 
 export default App

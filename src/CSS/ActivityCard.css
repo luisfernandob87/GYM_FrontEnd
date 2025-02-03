@@ -13,7 +13,7 @@
 .activities-card {
   background-color: #fff; /* Fondo blanco para la tarjeta */
   color: #000; /* Texto en negro */
-  width: 90%; /* Ancho fijo */
+  width: 50vh; /* Ancho fijo */
   height: 80%; /* Altura fija */
   border-radius: 8px; /* Bordes redondeados */
   display: flex;
@@ -28,10 +28,4 @@
   text-align: center;
   font-size: 1.5rem;
   font-weight: bold;
-}
-
-/* Efecto hover para resaltar aún más la tarjeta */
-.activities-card:hover {
-  transform: scale(1.05); /* Agranda ligeramente la tarjeta */
-  box-shadow: 0 6px 15px rgba(255, 255, 255, 0.5); /* Sombra más intensa */
 }
