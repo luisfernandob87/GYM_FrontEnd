@@ -9,11 +9,11 @@ const Carousel = () => {
   useEffect(() => {
     const fetchImages = async () => {
       const imageUrls = [
-        "https://picsum.photos/800/600?random=1",
-        "https://picsum.photos/800/600?random=2",
-        "https://picsum.photos/800/600?random=3",
-        "https://picsum.photos/800/600?random=4",
-        "https://picsum.photos/800/600?random=5",
+        "https://mercadofitness.com/wp-content/uploads/2019/11/Bio-Ritmo-abrio-Tonus-Gym-su-cuarto-micro-gimnasio.jpg",
+        "https://www.discoverpuertorico.com/sites/default/files/styles/horizontal_narrow_800x600/public/2023-01/Exercise%20%281%29.JPEG?h=ec7ec082&itok=rp8qApxa",
+        "https://img-us.didaudo.net/us-locations/ES/000/000/66/0vivagym-meridiana-gimnasio-en-barcelona.jpg?output=webp&fit=cover&w=800&h=600&q=70",
+        "https://www.fit-maker.com/cdn/shop/articles/maquina_de_gimnasio_para_abdomen_800x.png?v=1675286781",
+        "https://xuanlanyoga.com/wp-content/uploads/2014/10/IMG_4528-e1417533306525.jpg",
       ];
       setImages(imageUrls);
     };

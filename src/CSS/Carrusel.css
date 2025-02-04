@@ -1,7 +1,9 @@
 .carousel-container {
   position: relative;
-  width: 100%;
-  max-width: 800px;
+  /* width: 100%; */
+  max-width: 700px;
+  min-width: 300px;
+  max-height: 500px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -16,8 +18,8 @@
 
 img {
   margin-top: 20px;
-  max-width: 100%;
-  height: auto; /* La altura de la imagen determina el contenedor */
+  max-width: 500px;
+  max-height: 700; /* La altura de la imagen determina el contenedor */
   object-fit: cover;
 }
 

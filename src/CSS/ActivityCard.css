@@ -5,8 +5,9 @@
   justify-content: center;
   align-items: center;
   height: 25vh; /* Altura completa del viewport */
-  /* padding: 20px; */
+  padding: 20px; 
   margin-top: 10px;
+  cursor: pointer;
 }
 
 /* Estilo para la tarjeta */

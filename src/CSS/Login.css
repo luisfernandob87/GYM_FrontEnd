@@ -13,7 +13,11 @@
 
 /* Logo */
 .login-logo {
-  margin-bottom: 40px;
+  margin: 0 auto;
+}
+.logo{
+  width: auto;
+  height: 100px;
 }
 
 /* Inputs */
