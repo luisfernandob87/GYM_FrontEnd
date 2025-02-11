@@ -18,7 +18,7 @@ const Login = () => {
   };
 
   const handleStaffLogin = () => {
-    console.log("Login staff");
+    navigate("/staff");
   };
 
   const handleRecoverPassword = () => {

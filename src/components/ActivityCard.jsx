@@ -16,7 +16,7 @@ const ActivityCard = ({ image, title, onClick }) => {
     <div className="activities-container">
     <div onClick={handleActivity} className="activities-card">
       <div className="card-content">
-        <h2>Actividades</h2>
+        <h2 className='texto'>Actividades</h2>
       </div>
     </div>
   </div>

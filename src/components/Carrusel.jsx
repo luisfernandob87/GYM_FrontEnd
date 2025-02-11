@@ -49,7 +49,6 @@ const Carousel = () => {
 
   return (
     <>
-    <h2 className="mensajeBienvenida">Bienvenido</h2>
     <div className="carousel-container">
       {images.length > 0 ? (
         <>

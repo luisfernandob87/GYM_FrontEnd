@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../CSS/Reservas.css";
 import BottomMenu from "./BottomMenu";
+import Top from "./Top";
 
 const Reservas = () => {
   // Datos simulados
@@ -15,6 +16,8 @@ const Reservas = () => {
   };
 
   return (
+    <>
+    <Top/>
     <div className="reservas-container">
       <h2>DINAMO HIT</h2>
       <div className="info">
@@ -52,6 +55,7 @@ const Reservas = () => {
       </div>
       <BottomMenu />
     </div>
+    </>
   );
 };
 

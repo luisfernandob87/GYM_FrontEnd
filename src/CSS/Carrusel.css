@@ -64,14 +64,3 @@ img {
 .indicator.active {
   background-color: black;
 }
-
-.mensajeBienvenida {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 10vh;
-  background: linear-gradient(#000000, #000000);
-  font-family: Arial, sans-serif;
-  color: white;
-  margin: 0 auto;
-}

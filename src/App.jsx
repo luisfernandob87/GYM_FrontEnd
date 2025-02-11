@@ -31,6 +31,7 @@ function App() {
 <Route path="/activitycard" element={<ActivityCard />} />
 <Route path="/imageuploader" element={<ImageUploader />} />
 <Route path="/bottommenu" element={<BottomMenu />} />
+<Route path="/staff" element={<ImageUploader />} />
 </Routes>
 </HashRouter>
 

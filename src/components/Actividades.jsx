@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../CSS/Actividades.css";
 import BottomMenu from "./BottomMenu";
+import Top from "./Top";
 import { useNavigate } from "react-router";
 
 
@@ -52,6 +53,8 @@ const Actividades = () => {
   );
 
   return (
+    <>
+    <Top/>
     <div className="schedule-container">
       <div className="schedule-header">
           <input
@@ -90,6 +93,7 @@ const Actividades = () => {
       ))}
       <BottomMenu />
     </div>
+    </>
   );
 };
 

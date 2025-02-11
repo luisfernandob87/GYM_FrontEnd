@@ -14,8 +14,8 @@
 .activities-card {
   background-color: #fff; /* Fondo blanco para la tarjeta */
   color: #000; /* Texto en negro */
-  width: 50vh; /* Ancho fijo */
-  height: 80%; /* Altura fija */
+  width: 40vh; /* Ancho fijo */
+  height: 70%; /* Altura fija */
   border-radius: 8px; /* Bordes redondeados */
   display: flex;
   align-items: center;
@@ -29,4 +29,7 @@
   text-align: center;
   font-size: 1.5rem;
   font-weight: bold;
+}
+.texto{
+  margin-bottom: 0;
 }
