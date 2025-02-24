@@ -4,8 +4,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 25vh; /* Altura completa del viewport */
-  padding: 20px; 
+  height: 15vh; /* Altura completa del viewport */
+  padding: 10px; 
   margin-top: 10px;
   cursor: pointer;
 }

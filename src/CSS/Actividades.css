@@ -2,6 +2,13 @@
 .schedule-container {
     font-family: Arial, sans-serif;
     padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 10px;
   }
   
   .schedule-header {
