@@ -1,5 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "../CSS/Carrusel.css";
+import image1 from "../assets/img/1.jpg";
+import image2 from "../assets/img/2.webp";
+import image3 from "../assets/img/3.webp";
+import image4 from "../assets/img/4.webp";
+import image5 from "../assets/img/5.jpg";
 
 const Carousel = () => {
   const [images, setImages] = useState([]);
@@ -9,11 +14,11 @@ const Carousel = () => {
   useEffect(() => {
     const fetchImages = async () => {
       const imageUrls = [
-        "https://mercadofitness.com/wp-content/uploads/2019/11/Bio-Ritmo-abrio-Tonus-Gym-su-cuarto-micro-gimnasio.jpg",
-        "https://www.discoverpuertorico.com/sites/default/files/styles/horizontal_narrow_800x600/public/2023-01/Exercise%20%281%29.JPEG?h=ec7ec082&itok=rp8qApxa",
-        "https://img-us.didaudo.net/us-locations/ES/000/000/66/0vivagym-meridiana-gimnasio-en-barcelona.jpg?output=webp&fit=cover&w=800&h=600&q=70",
-        "https://www.fit-maker.com/cdn/shop/articles/maquina_de_gimnasio_para_abdomen_800x.png?v=1675286781",
-        "https://xuanlanyoga.com/wp-content/uploads/2014/10/IMG_4528-e1417533306525.jpg",
+        image1,
+        image2,
+        image3,
+        image4,
+        image5
       ];
       setImages(imageUrls);
     };
