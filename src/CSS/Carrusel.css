@@ -1,7 +1,7 @@
 .carousel-container {
   position: relative;
-  /* width: 100%; */
-  max-width: 700px;
+  width: 100%; /* Se adapta al ancho del dispositivo */
+  max-width: 700px; /* Límite máximo */
   min-width: 300px;
   max-height: 500px;
   margin: 0 auto;
@@ -18,15 +18,18 @@
 
 img {
   margin-top: 20px;
-  max-width: 500px;
-  max-height: 700; /* La altura de la imagen determina el contenedor */
-  object-fit: cover;
+  width: 100%;
+  height: 100%;  /* Hace que la imagen llene el contenedor */
+  max-height: 500px; /* Límite de altura */
+  object-fit: contain; /* Ajusta la imagen sin recortar */
 }
 
+
+/* Botones de navegación */
 .prev-btn,
 .next-btn {
   position: absolute;
-  top: 50%; /* Centrado vertical */
+  top: 50%;
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
