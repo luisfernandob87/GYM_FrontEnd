@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+body.dark-mode {
+  background-color: #3b3b3b;
+  color: #ffffff;
+
+}
 
 /* .logo {
   height: 6em;

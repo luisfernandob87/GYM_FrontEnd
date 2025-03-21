@@ -12,6 +12,15 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
+  /* Ajustes para pantallas de escritorio */
+  @media (min-width: 769px) {
+    .reservas-container {
+      max-width: 800px;
+      padding: 30px;
+      margin-top: 20px;
+    }
+  }
+  
   /* Título */
   h2 {
     margin-bottom: 10px;
@@ -44,6 +53,15 @@
     grid-template-columns: repeat(6, 1fr);
     gap: 10px;
     margin: 20px 0;
+  }
+  
+  /* Ajustes para pantallas de escritorio */
+  @media (min-width: 769px) {
+    .plazas-grid {
+      grid-template-columns: repeat(8, 1fr);
+      max-width: 600px;
+      margin: 20px auto;
+    }
   }
   
   .plaza {
@@ -79,6 +97,22 @@
     border-radius: 4px;
     cursor: pointer;
     font-size: 14px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  /* Efectos hover para escritorio */
+  @media (min-width: 769px) {
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+    
+    .btn-info:hover {
+      background-color: #c0c0c0;
+    }
+    
+    .btn-reservar:hover {
+      background-color: #5000c7;
+    }
   }
   
   .btn-info {

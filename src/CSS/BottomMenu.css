@@ -1,19 +1,19 @@
 .bottom-menu {
-  display: none; /* Ocultamos el menú por defecto */
   position: fixed;
-  bottom: 0;
-  left: 0; /* Aseguramos que se alinee a la izquierda */
-  right: 0; /* Aseguramos que se alinee a la derecha */
-  width: 100%; /* Ocupa todo el ancho */
-  background: #fff;
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-evenly; /* Espaciado uniforme entre ítems */
   align-items: center;
-  padding: 10px 0; /* Espaciado interno */
+  background: #fff;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
   z-index: 1000;
-  border-top: 1px solid #ddd; /* Línea superior para separación */
   font-family: Arial, sans-serif;
+  /* Estilos para móvil (por defecto) */
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
 }
 
 .menu-item {
@@ -22,10 +22,13 @@
   color: #555;
   text-decoration: none;
   font-size: 12px;
+  padding: 8px 12px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .menu-item.active {
   color: #d35400; /* Color para el ítem activo */
+  font-weight: bold;
 }
 
 .menu-item span {
@@ -33,9 +36,40 @@
   margin-top: 5px;
 }
 
-/* Mostrar el menú en dispositivos pequeños */
-@media (max-width: 768px) {
+.menu-item:hover {
+  background-color: #f5f5f5;
+  color: #d35400;
+}
+
+/* Estilos para pantallas medianas y grandes (escritorio) */
+@media (min-width: 769px) {
   .bottom-menu {
+    top: 0;
+    bottom: auto;
+    height: 60px;
+    border-top: none;
+    border-bottom: 1px solid #ddd;
+    padding: 0;
+  }
+  
+  .menu-item {
+    font-size: 16px;
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .menu-item span {
+    margin-top: 0;
+    margin-left: 5px;
+  }
+}
+
+/* Ajustes para el contenido principal cuando el menú está en la parte superior */
+@media (min-width: 769px) {
+  body {
+    padding-top: 60px;
   }
 }

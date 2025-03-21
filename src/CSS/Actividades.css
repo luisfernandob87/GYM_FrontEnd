@@ -11,11 +11,33 @@
     margin-top: 10px;
   }
   
+  /* Ajustes para pantallas de escritorio */
+  @media (min-width: 769px) {
+    .schedule-container {
+      max-width: 800px;
+      padding: 30px;
+      margin-top: 20px;
+    }
+  }
+  
   .schedule-header {
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin-bottom: 20px;
+  }
+  
+  /* Ajustes para pantallas de escritorio */
+  @media (min-width: 769px) {
+    .schedule-header {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .search-bar, .date-picker {
+      width: 48%;
+    }
   }
   
   .date-picker,
@@ -35,6 +57,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  /* Efecto hover para escritorio */
+  @media (min-width: 769px) {
+    .activity-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
   }
   
   .activity-details {

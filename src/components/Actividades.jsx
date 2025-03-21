@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../CSS/Actividades.css";
 import BottomMenu from "./BottomMenu";
 import Top from "./Top";
@@ -6,6 +6,28 @@ import { useNavigate } from "react-router";
 
 
 const Actividades = () => {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+  
+  useEffect(() => {
+    // Check if body has dark-mode class to sync with global state
+    const bodyHasDarkMode = document.body.classList.contains('dark-mode');
+    setIsDarkMode(bodyHasDarkMode);
+    
+    // Set up a mutation observer to detect changes to body's class list
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        if (mutation.attributeName === 'class') {
+          const bodyHasDarkMode = document.body.classList.contains('dark-mode');
+          setIsDarkMode(bodyHasDarkMode);
+        }
+      });
+    });
+    
+    observer.observe(document.body, { attributes: true });
+    
+    return () => observer.disconnect();
+  }, []);
+  
   // Datos simulados
   const activities = [
     {
@@ -54,7 +76,7 @@ const Actividades = () => {
 
   return (
     <>
-    <Top/>
+    <Top isDarkMode={isDarkMode}/>
     <div className="schedule-container">
       <div className="schedule-header">
           <input
@@ -91,7 +113,7 @@ const Actividades = () => {
           </div>
         </div>
       ))}
-      <BottomMenu />
+      {/* <BottomMenu /> */}
     </div>
     </>
   );

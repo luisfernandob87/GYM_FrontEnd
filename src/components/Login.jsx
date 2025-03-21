@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import "../CSS/Login.css";
-import logo from "../assets/logo.png"
+import logo from "../assets/logo.png";
 import { useNavigate } from "react-router";
 
-
 const Login = () => {
-
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
@@ -28,7 +26,9 @@ const Login = () => {
   return (
     <div className="login-container">
       <div className="login-logo">
-      <img src={logo} alt="logo" className="logo"/>
+        <img src={logo} alt="logo" className="logo" />
+      </div>
+      <div>
       </div>
       <input
         type="text"

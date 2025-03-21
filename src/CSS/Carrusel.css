@@ -36,7 +36,7 @@ img {
   border: none;
   padding: 10px;
   cursor: pointer;
-  z-index: 10;
+  z-index: 1;
 }
 
 .prev-btn {
@@ -52,6 +52,10 @@ img {
   display: flex;
   justify-content: center;
   margin-top: 10px;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  z-index: 2;
 }
 
 .indicator {
@@ -66,4 +70,10 @@ img {
 
 .indicator.active {
   background-color: black;
+}
+@media screen and (min-width: 768px) {
+  .carousel-container{
+  margin-top: 40px;
+
+  }
 }

@@ -1,14 +1,22 @@
 /* Estilo general del contenedor */
+
+
 .login-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  background: linear-gradient(to bottom, #000000, #aa9c64);
+  min-height: 100vh;
+  /* background: linear-gradient(to bottom, #000000, #aa9c64); */
   font-family: Arial, sans-serif;
   color: white;
   padding: 0 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
 }
 
 /* Logo */
@@ -57,4 +65,5 @@
   font-size: 14px;
   text-decoration: underline;
   cursor: pointer;
+  color: black;
 }
